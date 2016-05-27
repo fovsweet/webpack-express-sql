@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>index</title>
+	<meta charset='utf-8'>
+</head>
+<body>
+<h2><%=title%></h2>
+</body>
+<script type="text/javascript" src='../javascripts/jquery-1.11.3.js'></script>
+<script type="text/javascript">
+
+	$.post('/queryAll',function(res){
+		console.log(res)
+	})
+
+	$.post('/queryID',{'id':67},function(res){
+		console.log(res)
+	})
+</script>
+</html>
